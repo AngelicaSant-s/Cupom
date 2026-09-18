@@ -6,7 +6,7 @@
 <title>Seu cupom Pilotech</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     color-scheme: dark;
@@ -15,6 +15,7 @@
     --branco:#FFFFFF;
     --cinza:#AFAFAF;
     --zap:#25D366;
+    --corpo:clamp(18px,4.7vw,21px);
     --slant:-12deg;
   }
   *{box-sizing:border-box}
@@ -22,7 +23,7 @@
   body{
     background:var(--preto);
     color:var(--branco);
-    font-family:"Jost","Futura",-apple-system,"Segoe UI",sans-serif;
+    font-family:"Nexa","Outfit","Futura",-apple-system,"Segoe UI",sans-serif;
     font-weight:300;
     -webkit-font-smoothing:antialiased;
     min-height:100vh;
@@ -45,19 +46,21 @@
   }
 
   .intro{
-    font-size:clamp(19px,5vw,23px);
+    font-size:var(--corpo);
     font-weight:400;
-    line-height:1.35;
+    line-height:1.4;
     margin:0 0 6px;
-    max-width:22ch;
+    max-width:26ch;
   }
 
   .numero{
     display:block;
     font-weight:700;
-    font-size:clamp(108px,34vw,188px);
-    line-height:.86;
+    font-size:min(30vw,168px);
+    line-height:.9;
     letter-spacing:-.045em;
+    white-space:nowrap;
+    padding-right:.14em;
     color:var(--amarelo);
     transform:skewX(var(--slant));
     transform-origin:left bottom;
@@ -73,11 +76,11 @@
   }
 
   .detalhe{
-    font-size:clamp(17px,4.4vw,20px);
+    font-size:var(--corpo);
     font-weight:400;
     line-height:1.4;
     margin:18px 0 0;
-    max-width:24ch;
+    max-width:26ch;
   }
   .detalhe b{font-weight:600;color:var(--branco)}
 
